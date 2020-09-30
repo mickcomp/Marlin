@@ -37,6 +37,7 @@
  *
  */
 #define CONFIGURATION_H_VERSION 020006
+#define CONFIGURATION_H_VERSION 020007
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -468,6 +469,7 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
+#define BED_MAXTEMP      130 //MC
 
 //===========================================================================
 //============================= PID Settings ================================
