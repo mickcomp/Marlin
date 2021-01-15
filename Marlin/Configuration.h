@@ -1128,16 +1128,19 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 335
-#define Y_BED_SIZE 335
+#define X_BED_SIZE 340
+#define Y_BED_SIZE 340
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -12
-#define Y_MIN_POS -12
+//#define X_MIN_POS -23  - BMG Clone
+//#define Y_MIN_POS -27 - BMG Clone
+
+#define X_MIN_POS -23 //E3D
+#define Y_MIN_POS -27 //E3D
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 230
+#define Z_MAX_POS 290
 
 /**
  * Software Endstops
@@ -2431,7 +2434,7 @@
   #define NEOPIXEL_PIN     P1_24      // LED driving pin
   //#define NEOPIXEL2_TYPE NEOPIXEL_TYPE
   //#define NEOPIXEL2_PIN    5
-  #define NEOPIXEL_PIXELS 30       // Number of LEDs in the strip. (Longest strip when NEOPIXEL2_SEPARATE is disabled.)
+  #define NEOPIXEL_PIXELS 7       // Number of LEDs in the strip. (Longest strip when NEOPIXEL2_SEPARATE is disabled.)
   #define NEOPIXEL_IS_SEQUENTIAL   // Sequential display for temperature change - LED by LED. Disable to change all LEDs at once.
   #define NEOPIXEL_BRIGHTNESS 127  // Initial brightness (0-255)
   //#define NEOPIXEL_STARTUP_TEST  // Cycle through colors at startup
